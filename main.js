@@ -2,10 +2,12 @@ Vue.component('message',{
     "props":['array'],
     'template':`
       <div>
-       <div v-for="(list,index) in array" class="panel panel-default">
+       <div v-show="list.isV" v-for="(list,index) in array" class="panel panel-default">
+       
        <div class="panel-heading">message {{index+1}} {{list.username}}</div>
          <div class="panel-body">
           {{list.message}}
+                      <span @click="list.isV = false" class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
             </div>
           </div>
           
@@ -14,7 +16,7 @@ Vue.component('message',{
 
          'data'(){
         return {
-            "text":""
+            "isV": true
         }
     },
 
