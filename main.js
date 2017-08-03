@@ -16,7 +16,7 @@ Vue.component('message',{
 
          'data'(){
         return {
-            "isV": true
+
         }
     },
 

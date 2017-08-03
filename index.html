@@ -31,10 +31,7 @@
         el:"#root",
         data:{
            input:"",
-            "lists":[
-                {username:"hamdon",message:"hi","isV":true},
-                {username:"yousif",message:"hello","isV":true}
-            ],
+            "lists":"",
             "text":""
 
            },
@@ -48,8 +45,19 @@
 
                 this.lists.push({username:"hamdon","message":this.text});
                 this.text ="";
+            },
+            getMessage(){
+                this.lists= [
+                    {username:"hamdon",message:"hi","isV":true},
+                    {username:"yousif",message:"hello","isV":true}
+                ]
             }
+
+        },
+        mounted(){
+            this.getMessage()
         }
+
 
 
     });
