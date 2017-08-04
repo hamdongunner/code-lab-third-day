@@ -31,8 +31,6 @@ Vue.component('message',{
 
 Vue.component('tool-bar',{
     'template':`
-    
-
 <nav class="navbar navbar navbar-static-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,6 +66,30 @@ Vue.component('tool-bar',{
 
 
 
+
+`,
+
+    'data'(){
+        return {
+
+        }
+    },
+
+});
+
+
+
+
+
+Vue.component('foot-bar',{
+    'template':`
+
+    <div class="col-lg-12 col-md-8 col-sm-12  " >
+      <h1 class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="color: black">Contact Us</h1>
+      <h4 class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur eaque enim eveniet harum id ipsum, minus, necessitatibus non, nostrum obcaecati officia porro reiciendis reprehenderit similique temporibus velit veniam voluptate!</h4>
+           <a class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 tramspamint" type="button" href="https://www.facebook.com/CodeLabBootcamp/" style="color: #ffffff ;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+      <br><br>
+    </div>
 
 `,
 
