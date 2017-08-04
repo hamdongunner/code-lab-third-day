@@ -15,14 +15,13 @@
 <body>
 <div class="container">
 <div id="root">
-     <message  :array="lists"></message>
+     <message  v-for="message in lists" :message="message"></message>
     <input v-model="text" @keyup.enter="addM">
 </div>
 </div>
 
-
-
-
+<!--////////jQ//////////////-->
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 <!--////////////vue//////////////-->
 <script src="https://unpkg.com/vue@2.4.2"></script>
 <script src="main.js"></script>
@@ -31,8 +30,9 @@
         el:"#root",
         data:{
            input:"",
-            "lists":"",
-            "text":""
+            "lists":[],
+            "text":"",
+            message:""
 
            },
         computed:{
@@ -47,15 +47,23 @@
                 this.text ="";
             },
             getMessage(){
-                this.lists= [
-                    {username:"hamdon",message:"hi","isV":true},
-                    {username:"yousif",message:"hello","isV":true}
-                ]
+                $.ajax({
+                    url: 'http://api.codelab.camp/messages',
+                    type: "GET", /* or type:"GET" or type:"PUT" */
+                    dataType: "json",
+                    success: function (result) {
+                        vm.lists = result;
+                        console.log(result);
+                    },
+                    error: function () {
+                        console.log("error");
+                    }
+                });
             }
 
         },
         mounted(){
-            this.getMessage()
+            this.getMessage();
         }
 
 
