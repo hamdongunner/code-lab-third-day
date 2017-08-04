@@ -1,9 +1,6 @@
 Vue.component('message',{
     "props":['album','index','like'],
-    'template':`
-      
-       
-    
+    'template':`   
  <div style="-moz-box-shadow: black;box-shadow: black;-o-box-shadow: black;text-shadow: black">
       <div class="thumbnail">
         <img :src="album.image" class="img-responsive" alt="Responsive image">
@@ -15,17 +12,12 @@ Vue.component('message',{
         </div>
      </div>
   </div>
-    
-    
-    
          `,
 
          'data'(){
         return {
         }
     },
-
-
 });
 
 
@@ -63,10 +55,6 @@ Vue.component('tool-bar',{
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-
-
-
 `,
 
     'data'(){
@@ -92,7 +80,6 @@ Vue.component('foot-bar',{
     </div>
 
 `,
-
     'data'(){
         return {
 
