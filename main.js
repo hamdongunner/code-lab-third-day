@@ -25,15 +25,15 @@ Vue.component('message',{
 
 Vue.component('tool-bar',{
     'template':`
-<nav class="navbar navbar navbar-static-top">
+<nav class="navbar navbar-static-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+        <div style="background-color: black" class="navbar-header">
+            <button style="color: black;background-color: black" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span style="color: white;background-color: white" class="sr-only">Toggle navigation</span>
+                <span style="color: white;background-color: white" class="icon-bar"></span>
+                <span style="color: white;background-color: white" class="icon-bar"></span>
+                <span style="color: white;background-color: white" class="icon-bar"></span>
             </button>
         </div>
 
@@ -57,6 +57,8 @@ Vue.component('tool-bar',{
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
+
 `,
 
     'data'(){
