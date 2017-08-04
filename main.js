@@ -7,8 +7,10 @@ Vue.component('message',{
         <div class="caption">
           <h3 class="text-center">{{album.artist}}</h3>
           <a :href="album.url"><p class="text-center">{{album.title}}</p></a>
-           <span @click="like += 1" class="glyphicon glyphicon-heart btn" style="background-color: red;color: white;margin-left: 40px;" aria-hidden="true"></span> <span class="badge" style="margin-bottom: 40px;margin-left: -10px;background-color: red;margin-right: 0px" v-if="like != 0">{{like}}</span>
+          <div class="row">
+          <span @click="like += 1" class="glyphicon glyphicon-heart btn" style="background-color: red;color: white;margin-left: 40px;width: auto;height: auto;" aria-hidden="true"></span> <span class="badge" style="margin-bottom: 40px;margin-left: -10px;background-color: red;margin-right: 0px" v-if="like != 0">{{like}}</span>
           <a style="margin-left: 0px;" href="http://facebook.com/profile.php?=73322363"><span class="glyphicon glyphicon-share-alt btn btn-primary" aria-hidden="true"></span></a>
+       </div>
         </div>
      </div>
   </div>
