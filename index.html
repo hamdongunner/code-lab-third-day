@@ -13,12 +13,25 @@
 
 
 <body>
-<div class="container">
+
+<tool-bar></tool-bar>
+
 <div id="root">
-     <message  v-for="message in lists" :message="message"></message>
-    <input v-model="text" @keyup.enter="addM">
+    <tool-bar></tool-bar>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 col-xs-offset-4  col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+     <message style=" box-shadow: 1px 4px 4px 1px  #ccc;" v-for="(album,index) in lists" :album="album" :index="index" :like="like"></message>
+    </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 <!--////////jQ//////////////-->
 <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
@@ -32,7 +45,9 @@
            input:"",
             "lists":[],
             "text":"",
-            message:""
+            message:"",
+            "index":"",
+            "like":0
 
            },
         computed:{
@@ -41,14 +56,9 @@
             }
         },
         methods:{
-            addM:function () {
-
-                this.lists.push({username:"hamdon","message":this.text});
-                this.text ="";
-            },
-            getMessage(){
+            getMessage: function () {
                 $.ajax({
-                    url: 'http://api.codelab.camp/messages',
+                    url: 'https://rallycoding.herokuapp.com/api/music_albums',
                     type: "GET", /* or type:"GET" or type:"PUT" */
                     dataType: "json",
                     success: function (result) {
@@ -59,7 +69,11 @@
                         console.log("error");
                     }
                 });
-            }
+
+
+
+            },
+
 
         },
         mounted(){
