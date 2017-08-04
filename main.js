@@ -47,13 +47,13 @@ Vue.component('tool-bar',{
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background:url(2.jpg);background-size: 80% 100%">
             <ul class="nav navbar-nav">
                 <li class="active"><img src="1.jpg" class="img-responsive" alt="Responsive image" style="width:40px;margin-top:7px;height:40px;"></li>
-                <li class="active"><a style="color: white;text-shadow: 1px 1px 5px black;font-size:170%" href="#">Home <span class="sr-only">(current)</span></a></li>
-                <li><a style="color: white;text-shadow: 1px 1px 5px black;font-size:170%" href="#">About</a></li>
+                <li class="active"><a style="color: white;text-shadow: 1px 1px 5px black;font-size:190%" href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a style="color: white;text-shadow: 1px 1px 5px black;font-size:190%" href="#">About</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li  class="dropdown">
-                    <a style="color: white;text-shadow: 1px 1px 5px black;font-size:170%" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acount <span class="caret"></span></a>
+                    <a style="color: white;text-shadow: 1px 1px 5px black;font-size:190%" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acount <span class="caret"></span></a>
                     <ul  class="dropdown-menu">
                         <li><a href="#">Sign in</a></li>
                         <li><a href="#">Sign out</a></li>
