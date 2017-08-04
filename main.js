@@ -84,7 +84,7 @@ Vue.component('tool-bar',{
 Vue.component('foot-bar',{
     'template':`
 
-    <div class="col-lg-12 col-md-8 col-sm-12  " >
+    <div class="col-lg-11 col-md-11 col-sm-11  " >
       <h1 class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="color: black">Contact Us</h1>
       <h4 class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur eaque enim eveniet harum id ipsum, minus, necessitatibus non, nostrum obcaecati officia porro reiciendis reprehenderit similique temporibus velit veniam voluptate!</h4>
            <a class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 tramspamint" type="button" href="https://www.facebook.com/CodeLabBootcamp/" style="color: #ffffff ;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
